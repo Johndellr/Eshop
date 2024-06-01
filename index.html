@@ -13,6 +13,43 @@
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
 </head>
+
+
+
+
+
+
+<style>
+        /* Default styling hides the content */
+        body {
+            display: none;
+            text-align: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        /* Show content only for screens smaller than 768px */
+        @media (max-width: 768px) {
+            body {
+                display: block;
+            }
+            .desktop-message {
+                display: none;
+            }
+        }
+        /* Message for desktop users */
+        .desktop-message {
+            display: block;
+            margin-top: 50px;
+            font-size: 24px;
+            color: red;
+        }
+</style>
+
+
+
+
+
+	
 <style>
 .float{
   position:fixed;
