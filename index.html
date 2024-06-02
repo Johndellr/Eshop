@@ -14,6 +14,79 @@
 </head>
 
 
+
+
+
+
+
+
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .loader {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            transform: translate(-50%, -50%);
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        #content {
+            display: none;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="loader" class="loader"></div>
+    
+    <!-- Main content of the webpage -->
+    <div id="content">
+        <!-- Your main content here -->
+        <h1>Welcome to my website</h1>
+        <p>This is the main content of the page.</p>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var loader = document.getElementById("loader");
+            var content = document.getElementById("content");
+
+            // Simulate a loading delay
+            setTimeout(function() {
+                loader.style.display = "none";
+                content.style.display = "block";
+            }, 2000); // 2 seconds delay for demonstration
+        });
+    </script>
+
+	
+
+
+	
+
+
+
+
+
+
+	
+
 <style>
 .float{
   position:fixed;
